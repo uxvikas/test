@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Dashboard Optimization - Case Study</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="musings.html" class="nav-link">Musings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study-hero">
+            <div class="container">
+                <div class="case-study-nav">
+                    <a href="work.html" class="back-link">← Back to Work</a>
+                    <div class="case-nav-buttons">
+                        <button onclick="goToPrevCaseStudy('case-study-2.html')" class="btn btn-secondary">← Previous</button>
+                        <button onclick="goToNextCaseStudy('case-study-2.html')" class="btn btn-secondary">Next →</button>
+                    </div>
+                </div>
+                
+                <h1 class="case-study-title">SaaS Dashboard Optimization</h1>
+                <p class="case-study-subtitle">
+                    Redesigning a complex analytics dashboard to help enterprise users make data-driven decisions 
+                    faster, reducing task completion time by 60% and increasing user engagement by 85%.
+                </p>
+                
+                <div class="image-placeholder" style="height: 400px; margin: 2rem 0;">
+                    <p>Hero Image - Dashboard Before/After Comparison</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-overview">
+            <div class="container">
+                <div class="case-study-meta">
+                    <div class="meta-card">
+                        <h4>My Role</h4>
+                        <p>Senior Product Designer</p>
+                        <ul>
+                            <li>User research and data analysis</li>
+                            <li>Information architecture redesign</li>
+                            <li>Data visualization design</li>
+                            <li>Interaction design and prototyping</li>
+                            <li>Usability testing coordination</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Team Structure</h4>
+                        <ul>
+                            <li>1 Product Manager</li>
+                            <li>1 Data Analyst</li>
+                            <li>3 Frontend Developers</li>
+                            <li>2 Backend Developers</li>
+                            <li>1 UX Researcher</li>
+                            <li>1 Product Designer (me)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Sprint/Agile Approach</h4>
+                        <p>3-week sprints with data-driven iterations</p>
+                        <ul>
+                            <li>Sprint planning with data reviews</li>
+                            <li>Daily standups with usage metrics</li>
+                            <li>Bi-weekly user feedback sessions</li>
+                            <li>Sprint retrospectives with A/B test results</li>
+                            <li>Monthly roadmap reviews</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Timeline & Impact</h4>
+                        <p><strong>Duration:</strong> 6 months</p>
+                        <p><strong>Results:</strong></p>
+                        <ul>
+                            <li>60% reduction in task completion time</li>
+                            <li>85% increase in daily active usage</li>
+                            <li>40% improvement in data accuracy</li>
+                            <li>75% decrease in support tickets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🔍 Discover</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>The Challenge</h4>
+                        <p>
+                            Enterprise users were struggling with a data-heavy dashboard that took an average of 
+                            12 minutes to complete simple reporting tasks. The interface was cluttered with over 
+                            50 different charts and metrics, making it nearly impossible to find relevant insights quickly.
+                        </p>
+                        <p>
+                            Customer success teams reported that new users often abandoned the platform during 
+                            onboarding, citing the dashboard as "overwhelming" and "impossible to navigate."
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Original Dashboard Screenshots & User Pain Points</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Research Methodology</h4>
+                        <p>I conducted extensive research to understand user workflows and pain points:</p>
+                        <ul>
+                            <li><strong>User Interviews:</strong> 20 enterprise users across different roles</li>
+                            <li><strong>Analytics Deep-dive:</strong> 6 months of user behavior data</li>
+                            <li><strong>Task Analysis:</strong> Observed 15 users completing real work tasks</li>
+                            <li><strong>Card Sorting:</strong> Information architecture testing with 25 participants</li>
+                            <li><strong>Heatmap Analysis:</strong> Eye-tracking studies with 10 power users</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Research Session Documentation & Insights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Key Research Insights</h4>
+                        <ul>
+                            <li>Users only actively used 15% of available dashboard features</li>
+                            <li>80% of tasks required data from multiple scattered widgets</li>
+                            <li>Users created personal "workarounds" using external tools</li>
+                            <li>Data refresh times were unclear, leading to outdated decisions</li>
+                            <li>Mobile access was critical but completely unusable</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Journey Map & Pain Point Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🎯 Define</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            "Enterprise users need a focused, contextual dashboard that surfaces the most relevant 
+                            data for their specific role and current tasks, because the current information overload 
+                            is preventing them from making timely, data-driven decisions and reducing platform adoption."
+                        </p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Personas & Use Cases</h4>
+                        <p>Research revealed three distinct user types with different data needs:</p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Primary Persona: Alex, the Marketing Manager</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Secondary Persona: Jordan, the Sales Director</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Tertiary Persona: Sam, the Executive</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Success Metrics</h4>
+                        <ul>
+                            <li><strong>Efficiency:</strong> Reduce average task completion time by 50%</li>
+                            <li><strong>Adoption:</strong> Increase daily active users by 60%</li>
+                            <li><strong>Satisfaction:</strong> Achieve 4.5+ user satisfaction score</li>
+                            <li><strong>Support:</strong> Reduce dashboard-related support tickets by 70%</li>
+                            <li><strong>Business:</strong> Increase user retention by 25%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Design Principles</h4>
+                        <ul>
+                            <li><strong>Contextual:</strong> Show relevant data based on user role and goals</li>
+                            <li><strong>Scannable:</strong> Enable quick data consumption and pattern recognition</li>
+                            <li><strong>Actionable:</strong> Connect insights directly to next steps</li>
+                            <li><strong>Flexible:</strong> Allow customization without overwhelming choice</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Information Hierarchy & Design Principles Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">✏️ Design</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Information Architecture Redesign</h4>
+                        <p>
+                            Restructured the dashboard around user goals rather than data types. Created role-based 
+                            views that surface the most important metrics first, with progressive disclosure for 
+                            detailed analysis.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>New Information Architecture & Navigation Structure</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Data Visualization Redesign</h4>
+                        <p>
+                            Replaced complex charts with clear, actionable visualizations. Implemented a consistent 
+                            visual language for different data types and added contextual annotations to help users 
+                            understand what the data means.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Data Visualization Style Guide & Chart Types</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Before/After Visualization Comparisons</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Interactive Prototyping</h4>
+                        <p>
+                            Built functional prototypes to test different interaction patterns for data exploration. 
+                            Tested drill-down capabilities, filtering mechanisms, and customization options with 
+                            real user data.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Interactive Prototype Demos & User Testing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Responsive Design System</h4>
+                        <p>
+                            Created a comprehensive design system optimized for data-heavy interfaces across devices. 
+                            Established patterns for responsive charts and mobile-first data consumption.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Responsive Dashboard Components & Mobile Optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🚀 Deliver</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Phased Implementation</h4>
+                        <p>
+                            Rolled out the new dashboard in carefully planned phases to minimize disruption 
+                            to existing workflows while gathering continuous feedback.
+                        </p>
+                        <ul>
+                            <li><strong>Phase 1:</strong> New navigation and role-based views</li>
+                            <li><strong>Phase 2:</strong> Enhanced data visualizations</li>
+                            <li><strong>Phase 3:</strong> Advanced filtering and customization</li>
+                            <li><strong>Phase 4:</strong> Mobile optimization and collaboration features</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Implementation Roadmap & Rollout Strategy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Developer Collaboration</h4>
+                        <p>
+                            Worked closely with engineering to ensure data accuracy and performance optimization. 
+                            Created detailed specifications for complex interactions and established testing protocols.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Design Specifications & Development Handoff Documentation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Training & Adoption</h4>
+                        <p>
+                            Collaborated with Customer Success to create training materials and migration guides. 
+                            Conducted webinars and created interactive tutorials for smooth user transition.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Training Materials & Adoption Metrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">📊 Measure</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Quantitative Results</h4>
+                        <p>
+                            The redesigned dashboard exceeded all success metrics within 3 months of full launch:
+                        </p>
+                        <ul>
+                            <li><strong>Task Completion Time:</strong> Reduced by 60% (exceeded 50% goal)</li>
+                            <li><strong>Daily Active Users:</strong> Increased by 85% (exceeded 60% goal)</li>
+                            <li><strong>User Satisfaction:</strong> Improved to 4.8/5 (exceeded 4.5 goal)</li>
+                            <li><strong>Support Tickets:</strong> Reduced by 75% (exceeded 70% goal)</li>
+                            <li><strong>User Retention:</strong> Increased by 40% (exceeded 25% goal)</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Performance Metrics Dashboard & Success Analytics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Qualitative Feedback</h4>
+                        <p>Post-launch interviews revealed significant improvements in user experience:</p>
+                        <ul>
+                            <li>95% of users found the new navigation more intuitive</li>
+                            <li>88% reported making faster decisions with better data access</li>
+                            <li>82% said they discovered insights they hadn't seen before</li>
+                            <li>Platform NPS score improved from 6.2 to 8.7</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Testimonials & NPS Score Improvement</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Business Impact</h4>
+                        <ul>
+                            <li>30% increase in platform feature adoption</li>
+                            <li>50% reduction in onboarding time for new users</li>
+                            <li>25% increase in subscription renewals</li>
+                            <li>$2.3M annual reduction in support costs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Continuous Improvement</h4>
+                        <p>Established ongoing optimization based on user behavior:</p>
+                        <ul>
+                            <li>Monthly user feedback sessions</li>
+                            <li>A/B testing new visualization types</li>
+                            <li>Quarterly dashboard performance reviews</li>
+                            <li>Predictive analytics integration roadmap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Medium</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

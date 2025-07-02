@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App for Seniors - Case Study</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="musings.html" class="nav-link">Musings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study-hero">
+            <div class="container">
+                <div class="case-study-nav">
+                    <a href="work.html" class="back-link">← Back to Work</a>
+                    <div class="case-nav-buttons">
+                        <button onclick="goToPrevCaseStudy('case-study-3.html')" class="btn btn-secondary">← Previous</button>
+                        <button onclick="goToNextCaseStudy('case-study-3.html')" class="btn btn-secondary">Next →</button>
+                    </div>
+                </div>
+                
+                <h1 class="case-study-title">Healthcare App for Seniors</h1>
+                <p class="case-study-subtitle">
+                    Designing an accessible medication management app specifically for seniors, improving medication 
+                    adherence by 78% through large text, simple navigation, and clear visual hierarchy.
+                </p>
+                
+                <div class="image-placeholder" style="height: 400px; margin: 2rem 0;">
+                    <p>Hero Image - Senior-Friendly App Interface</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-overview">
+            <div class="container">
+                <div class="case-study-meta">
+                    <div class="meta-card">
+                        <h4>My Role</h4>
+                        <p>Lead UX Designer & Accessibility Specialist</p>
+                        <ul>
+                            <li>Accessibility research and testing</li>
+                            <li>Senior user interviews</li>
+                            <li>Large-text interface design</li>
+                            <li>Voice interface prototyping</li>
+                            <li>Caregiver workflow design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Team Structure</h4>
+                        <ul>
+                            <li>1 Product Manager</li>
+                            <li>2 Mobile Developers</li>
+                            <li>1 Healthcare Consultant</li>
+                            <li>1 Accessibility Expert</li>
+                            <li>1 UX Researcher</li>
+                            <li>1 Product Designer (me)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Sprint/Agile Approach</h4>
+                        <p>2-week sprints with accessibility reviews</p>
+                        <ul>
+                            <li>Accessibility-first sprint planning</li>
+                            <li>Daily accessibility check-ins</li>
+                            <li>Weekly senior user testing</li>
+                            <li>Bi-weekly healthcare compliance reviews</li>
+                            <li>Monthly caregiver feedback sessions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Timeline & Impact</h4>
+                        <p><strong>Duration:</strong> 8 months</p>
+                        <p><strong>Results:</strong></p>
+                        <ul>
+                            <li>78% improvement in medication adherence</li>
+                            <li>92% user satisfaction from seniors 65+</li>
+                            <li>65% reduction in missed doses</li>
+                            <li>85% of users completed onboarding independently</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🔍 Discover</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>The Challenge</h4>
+                        <p>
+                            Seniors aged 65+ manage an average of 4-5 prescription medications daily, with 40% 
+                            experiencing medication adherence issues due to complex schedules, small text on bottles, 
+                            and confusing app interfaces not designed for age-related vision and motor changes.
+                        </p>
+                        <p>
+                            Existing health apps were built for younger users, creating barriers that prevented 
+                            seniors from accessing digital health tools that could significantly improve their 
+                            quality of life and health outcomes.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Senior User Pain Points & Current App Analysis</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Research with Seniors</h4>
+                        <p>Conducted extensive research specifically with seniors 65-85 years old:</p>
+                        <ul>
+                            <li><strong>In-home Interviews:</strong> 25 seniors in their own environments</li>
+                            <li><strong>Medication Journey Mapping:</strong> Following actual daily routines</li>
+                            <li><strong>Accessibility Testing:</strong> Vision, motor, and cognitive assessments</li>
+                            <li><strong>Caregiver Interviews:</strong> 15 adult children and spouses</li>
+                            <li><strong>Medical Professional Input:</strong> Interviews with 8 geriatricians</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Senior User Research Sessions & Home Environment Studies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Key Accessibility Insights</h4>
+                        <ul>
+                            <li>68% had difficulty reading text smaller than 18px</li>
+                            <li>85% preferred simple, linear navigation over complex menus</li>
+                            <li>74% wanted larger touch targets (minimum 44px)</li>
+                            <li>91% needed high contrast color schemes</li>
+                            <li>56% would benefit from voice assistance features</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Accessibility Testing Results & User Behavior Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🎯 Define</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            "Seniors need a medication management app that accommodates age-related changes in 
+                            vision, motor skills, and technology comfort, because current health apps create 
+                            barriers that prevent them from managing their medications effectively and maintaining 
+                            their independence."
+                        </p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Primary User Persona</h4>
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Primary Persona: Dorothy, 72-year-old retiree with mild arthritis</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Secondary Persona: Robert, 68-year-old with early-stage vision changes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Accessibility Success Criteria</h4>
+                        <ul>
+                            <li><strong>WCAG AAA Compliance:</strong> Meet highest accessibility standards</li>
+                            <li><strong>Large Text:</strong> Minimum 18px font size throughout</li>
+                            <li><strong>High Contrast:</strong> 7:1 contrast ratio minimum</li>
+                            <li><strong>Simple Navigation:</strong> Maximum 3 taps to any feature</li>
+                            <li><strong>Voice Support:</strong> Full voice navigation capability</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Design Principles for Seniors</h4>
+                        <ul>
+                            <li><strong>Simplicity:</strong> One primary action per screen</li>
+                            <li><strong>Clarity:</strong> High contrast, large text, clear icons</li>
+                            <li><strong>Forgiveness:</strong> Easy error recovery and undo actions</li>
+                            <li><strong>Familiarity:</strong> Use conventional UI patterns</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Senior-Focused Design Guidelines & Accessibility Standards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">✏️ Design</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Accessible Interface Design</h4>
+                        <p>
+                            Created a clean, high-contrast interface with 20px+ text throughout, 48px minimum 
+                            touch targets, and simplified iconography that seniors could easily recognize and use.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>High-Contrast Interface Designs & Typography Hierarchy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Simplified User Flows</h4>
+                        <p>
+                            Redesigned medication management flows to eliminate complexity. Each task follows 
+                            a clear, linear path with prominent confirmation steps and easy way to go back.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Simplified User Flow Diagrams & Navigation Structure</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Medication Reminder Flow & Confirmation Screens</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Voice Interface Integration</h4>
+                        <p>
+                            Designed voice-first interactions for users with vision difficulties or motor 
+                            limitations. Users can ask about medications, confirm doses, and report side effects 
+                            using natural speech.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Voice Interface Design & Speech Recognition Flows</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Caregiver Dashboard</h4>
+                        <p>
+                            Created a separate interface for adult children and caregivers to monitor medication 
+                            adherence, receive alerts, and assist with medication management while respecting 
+                            senior independence.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Caregiver Dashboard Design & Monitoring Features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🚀 Deliver</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Accessibility-First Development</h4>
+                        <p>
+                            Worked with developers to ensure accessibility was built-in from the start, not 
+                            added as an afterthought. Conducted weekly accessibility audits throughout development.
+                        </p>
+                        <ul>
+                            <li>Screen reader compatibility testing</li>
+                            <li>Voice over integration for iOS</li>
+                            <li>TalkBack support for Android</li>
+                            <li>Large text dynamic scaling</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Accessibility Testing Documentation & Screen Reader Compatibility</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Senior User Testing</h4>
+                        <p>
+                            Conducted extensive testing with seniors throughout development, making adjustments 
+                            based on real-world usage in their home environments.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Senior User Testing Sessions & Iterative Design Changes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Launch Strategy</h4>
+                        <p>
+                            Partnered with senior centers, healthcare providers, and family caregivers for 
+                            supported rollout with in-person training and ongoing support.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Launch Strategy & Senior Center Partnership Program</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">📊 Measure</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Health Outcomes</h4>
+                        <p>
+                            The app significantly improved medication adherence and health outcomes for senior users:
+                        </p>
+                        <ul>
+                            <li><strong>Medication Adherence:</strong> Improved by 78% within 3 months</li>
+                            <li><strong>Missed Doses:</strong> Reduced by 65% compared to pre-app baseline</li>
+                            <li><strong>User Satisfaction:</strong> 92% satisfaction rate among seniors 65+</li>
+                            <li><strong>Independent Usage:</strong> 85% completed onboarding without help</li>
+                            <li><strong>Caregiver Peace of Mind:</strong> 94% of caregivers felt more confident</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Health Outcomes Dashboard & Adherence Improvement Metrics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Accessibility Impact</h4>
+                        <ul>
+                            <li>WCAG AAA compliance achieved and verified</li>
+                            <li>100% compatibility with screen readers</li>
+                            <li>Voice commands used by 67% of users</li>
+                            <li>Large text feature adopted by 84% of users</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Accessibility Feature Usage & Compliance Testing Results</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Testimonials</h4>
+                        <p>Feedback from senior users and their families:</p>
+                        <ul>
+                            <li>"Finally, an app that I can actually use!" - Dorothy, 72</li>
+                            <li>"The large text and simple buttons make all the difference" - Robert, 68</li>
+                            <li>"I love that I can ask it questions with my voice" - Margaret, 75</li>
+                            <li>"It gives me peace of mind about mom's medications" - Sarah, caregiver</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Recognition & Awards</h4>
+                        <ul>
+                            <li>Winner: Best Accessibility Design - Health Tech Awards 2024</li>
+                            <li>Featured: AARP Innovation Showcase</li>
+                            <li>Certified: ADA Digital Accessibility Compliance</li>
+                            <li>Recommended: American Geriatrics Society</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Medium</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Mobile App Redesign - Case Study</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="musings.html" class="nav-link">Musings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study-hero">
+            <div class="container">
+                <div class="case-study-nav">
+                    <a href="work.html" class="back-link">← Back to Work</a>
+                    <div class="case-nav-buttons">
+                        <button onclick="goToPrevCaseStudy('case-study-1.html')" class="btn btn-secondary">← Previous</button>
+                        <button onclick="goToNextCaseStudy('case-study-1.html')" class="btn btn-secondary">Next →</button>
+                    </div>
+                </div>
+                
+                <h1 class="case-study-title">E-commerce Mobile App Redesign</h1>
+                <p class="case-study-subtitle">
+                    Transforming a cluttered shopping experience into an intuitive, conversion-focused mobile app 
+                    that increased sales by 40% and improved user satisfaction scores by 65%.
+                </p>
+                
+                <div class="image-placeholder" style="height: 400px; margin: 2rem 0;">
+                    <p>Hero Image - App Screenshots Before/After Comparison</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-overview">
+            <div class="container">
+                <div class="case-study-meta">
+                    <div class="meta-card">
+                        <h4>My Role</h4>
+                        <p>Lead Product Designer</p>
+                        <ul>
+                            <li>User research and interviews</li>
+                            <li>Information architecture</li>
+                            <li>Interaction design</li>
+                            <li>Prototyping and testing</li>
+                            <li>Design system development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Team Structure</h4>
+                        <ul>
+                            <li>1 Product Manager</li>
+                            <li>2 iOS Developers</li>
+                            <li>2 Android Developers</li>
+                            <li>1 Backend Developer</li>
+                            <li>1 QA Engineer</li>
+                            <li>1 Product Designer (me)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Sprint/Agile Approach</h4>
+                        <p>2-week sprints with continuous delivery</p>
+                        <ul>
+                            <li>Sprint planning every 2 weeks</li>
+                            <li>Daily standups</li>
+                            <li>Weekly design reviews</li>
+                            <li>Sprint retrospectives</li>
+                            <li>Quarterly OKR planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meta-card">
+                        <h4>Timeline & Impact</h4>
+                        <p><strong>Duration:</strong> 4 months</p>
+                        <p><strong>Results:</strong></p>
+                        <ul>
+                            <li>40% increase in conversion rate</li>
+                            <li>65% improvement in user satisfaction</li>
+                            <li>25% reduction in cart abandonment</li>
+                            <li>50% faster checkout process</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🔍 Discover</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>The Challenge</h4>
+                        <p>
+                            The existing e-commerce mobile app had a 68% cart abandonment rate and consistently low 
+                            user satisfaction scores. Users complained about a confusing navigation structure, 
+                            slow loading times, and a complicated checkout process.
+                        </p>
+                        <p>
+                            Business stakeholders were seeing declining mobile revenue despite increased mobile traffic, 
+                            indicating a significant UX problem that needed immediate attention.
+                        </p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Research</h4>
+                        <p>I conducted comprehensive research to understand user pain points:</p>
+                        <ul>
+                            <li><strong>User Interviews:</strong> 15 in-depth interviews with existing customers</li>
+                            <li><strong>Analytics Analysis:</strong> 3 months of user behavior data</li>
+                            <li><strong>Usability Testing:</strong> Task-based testing with 8 participants</li>
+                            <li><strong>Competitor Analysis:</strong> Benchmarking against 5 leading e-commerce apps</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Interview Process & Key Insights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Key Findings</h4>
+                        <ul>
+                            <li>89% of users found the current navigation confusing</li>
+                            <li>Users needed an average of 7 taps to complete a purchase</li>
+                            <li>Search functionality was returning irrelevant results</li>
+                            <li>Product images were too small to see details clearly</li>
+                            <li>Users felt uncertain about shipping costs until the final step</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Analytics Dashboard & User Journey Heatmaps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🎯 Define</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Problem Statement</h4>
+                        <p>
+                            "Mobile users need a streamlined, intuitive shopping experience that allows them to 
+                            quickly find products, make confident purchase decisions, and complete checkout without 
+                            friction, because the current app's complex navigation and unclear pricing information 
+                            is causing high cart abandonment and lost revenue."
+                        </p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Personas</h4>
+                        <p>Based on research, I identified two primary user types:</p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Primary Persona: Sarah, the Busy Professional</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Secondary Persona: Mike, the Deal Hunter</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Success Metrics</h4>
+                        <p>We defined clear KPIs to measure success:</p>
+                        <ul>
+                            <li><strong>Primary:</strong> Reduce cart abandonment rate by 30%</li>
+                            <li><strong>Primary:</strong> Increase conversion rate by 25%</li>
+                            <li><strong>Secondary:</strong> Improve user satisfaction scores to 4.5+</li>
+                            <li><strong>Secondary:</strong> Reduce checkout time by 40%</li>
+                            <li><strong>Business:</strong> Increase mobile revenue by 35%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Design Principles</h4>
+                        <ul>
+                            <li><strong>Clarity:</strong> Every element should have a clear purpose</li>
+                            <li><strong>Efficiency:</strong> Minimize taps to complete key tasks</li>
+                            <li><strong>Trust:</strong> Build confidence through transparent pricing</li>
+                            <li><strong>Delight:</strong> Create moments of joy in the experience</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Design Principles Visualization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">✏️ Design</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Information Architecture</h4>
+                        <p>
+                            I redesigned the app's navigation structure based on user mental models discovered 
+                            during research. The new IA reduced the navigation depth from 4 levels to 2 levels 
+                            for most common tasks.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Old vs New Information Architecture Comparison</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Wireframing & User Flows</h4>
+                        <p>
+                            Created low-fidelity wireframes to quickly iterate on layout concepts. 
+                            Focused on optimizing the three critical user flows: Browse → Product Detail → Checkout.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Key User Flow Wireframes</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Checkout Flow Optimization</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Visual Design</h4>
+                        <p>
+                            Developed a clean, modern visual style that put products first. 
+                            Established a design system with consistent typography, colors, and component library.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Design System Components & Style Guide</p>
+                        </div>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>High-Fidelity Screen Designs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Prototyping</h4>
+                        <p>
+                            Built interactive prototypes to validate interaction patterns and micro-animations. 
+                            Created both rapid prototypes for early testing and high-fidelity prototypes 
+                            for stakeholder buy-in.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Interactive Prototype Demonstrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">🚀 Deliver</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Development Collaboration</h4>
+                        <p>
+                            Worked closely with the development team to ensure pixel-perfect implementation. 
+                            Conducted weekly design reviews and provided detailed specifications and assets.
+                        </p>
+                        <ul>
+                            <li>Created detailed design specifications in Figma</li>
+                            <li>Provided exportable assets in multiple formats</li>
+                            <li>Conducted design QA throughout development sprints</li>
+                            <li>Facilitated design-dev handoff sessions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Implementation Strategy</h4>
+                        <p>
+                            We rolled out the redesign in phases to minimize risk and gather feedback:
+                        </p>
+                        <ul>
+                            <li><strong>Phase 1:</strong> New navigation and browse experience</li>
+                            <li><strong>Phase 2:</strong> Enhanced product detail pages</li>
+                            <li><strong>Phase 3:</strong> Streamlined checkout process</li>
+                            <li><strong>Phase 4:</strong> Search and filter improvements</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Design Handoff Documentation & Specifications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Quality Assurance</h4>
+                        <p>
+                            Conducted thorough testing across devices and conducted final usability 
+                            testing before launch to ensure the design met our success criteria.
+                        </p>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Pre-Launch Testing Results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="process-title">📊 Measure</h2>
+                <div class="process-content">
+                    <div class="content-block">
+                        <h4>Launch Results</h4>
+                        <p>
+                            The redesigned app exceeded all our success metrics within the first quarter post-launch:
+                        </p>
+                        <ul>
+                            <li><strong>Conversion Rate:</strong> Increased by 40% (exceeded 25% goal)</li>
+                            <li><strong>Cart Abandonment:</strong> Reduced by 35% (exceeded 30% goal)</li>
+                            <li><strong>User Satisfaction:</strong> Improved to 4.7/5 (exceeded 4.5 goal)</li>
+                            <li><strong>Checkout Time:</strong> Reduced by 50% (exceeded 40% goal)</li>
+                            <li><strong>Mobile Revenue:</strong> Increased by 45% (exceeded 35% goal)</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>Success Metrics Dashboard & Analytics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>User Feedback</h4>
+                        <p>Post-launch user interviews revealed strong positive sentiment:</p>
+                        <ul>
+                            <li>92% of users found the new navigation intuitive</li>
+                            <li>85% said the checkout process felt faster and easier</li>
+                            <li>78% appreciated the upfront shipping cost transparency</li>
+                            <li>App Store rating improved from 3.2 to 4.7 stars</li>
+                        </ul>
+                        
+                        <div class="image-placeholder" style="margin: 1.5rem 0;">
+                            <p>User Feedback & App Store Reviews</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Lessons Learned</h4>
+                        <p>Key insights that informed future design decisions:</p>
+                        <ul>
+                            <li>Early and frequent user testing prevented costly late-stage changes</li>
+                            <li>Cross-functional collaboration was essential for successful implementation</li>
+                            <li>Phased rollouts allowed us to iterate based on real user behavior</li>
+                            <li>Clear success metrics aligned the entire team around user outcomes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h4>Next Steps</h4>
+                        <p>Based on the success of this project, we planned follow-up initiatives:</p>
+                        <ul>
+                            <li>Personalization features based on user behavior</li>
+                            <li>Social shopping and reviews integration</li>
+                            <li>AR try-on features for applicable products</li>
+                            <li>Voice search capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Medium</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
