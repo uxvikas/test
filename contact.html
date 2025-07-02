@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Name - Product Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="musings.html" class="nav-link">Musings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="work-intro">
+                    <h1 class="hero-title">Let's Work Together</h1>
+                    <p>
+                        I'm always interested in discussing new opportunities, collaborating on interesting projects, 
+                        or just having a conversation about design. Feel free to reach out!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>
+                            Whether you're looking for a product designer for your team, need consultation 
+                            on a design challenge, or want to discuss collaboration opportunities, I'd love to hear from you.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h4>Email</h4>
+                                <p>hello@yourname.com</p>
+                            </div>
+                            <div class="contact-method">
+                                <h4>Location</h4>
+                                <p>San Francisco Bay Area, CA</p>
+                                <p><small>Open to remote work</small></p>
+                            </div>
+                            <div class="contact-method">
+                                <h4>Response Time</h4>
+                                <p>I typically respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="social-contact">
+                            <h4>Connect on Social</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">Dribbble</a>
+                                <a href="#" class="social-link">Medium</a>
+                                <a href="#" class="social-link">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-type">Project Type</label>
+                                <select id="project-type" name="project-type">
+                                    <option value="">Select a project type</option>
+                                    <option value="full-time">Full-time Position</option>
+                                    <option value="freelance">Freelance Project</option>
+                                    <option value="consultation">Design Consultation</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project or what you'd like to discuss..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start a Project?</h2>
+                    <p>
+                        I'm currently available for new projects and would love to help bring your ideas to life. 
+                        Let's create something amazing together.
+                    </p>
+                    <a href="#contact-form" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Medium</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
