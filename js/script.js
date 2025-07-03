@@ -98,8 +98,9 @@ function goToNextCaseStudy(currentCase) {
     ];
     
     const currentIndex = caseStudies.indexOf(currentCase);
-    const nextIndex = (currentIndex + 1) % caseStudies.length;
-    window.location.href = caseStudies[nextIndex];
+    if (currentIndex < caseStudies.length - 1) {
+        window.location.href = caseStudies[currentIndex + 1];
+    }
 }
 
 function goToPrevCaseStudy(currentCase) {
@@ -113,9 +114,99 @@ function goToPrevCaseStudy(currentCase) {
     ];
     
     const currentIndex = caseStudies.indexOf(currentCase);
-    const prevIndex = currentIndex === 0 ? caseStudies.length - 1 : currentIndex - 1;
-    window.location.href = caseStudies[prevIndex];
+    if (currentIndex > 0) {
+        window.location.href = caseStudies[currentIndex - 1];
+    }
 }
+
+// Initialize case study navigation on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Get current page filename
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    // Case study order
+    const caseStudies = [
+        'case-study-1.html',
+        'case-study-2.html', 
+        'case-study-3.html',
+        'case-study-4.html',
+        'case-study-5.html',
+        'case-study-6.html'
+    ];
+    
+    const currentIndex = caseStudies.indexOf(currentPage);
+    
+    if (currentIndex !== -1) {
+        // Hide Previous button on first case study
+        if (currentIndex === 0) {
+            const prevButton = document.querySelector('button[onclick*="goToPrevCaseStudy"]');
+            if (prevButton) {
+                prevButton.style.display = 'none';
+            }
+        }
+        
+        // Hide Next button on last case study
+        if (currentIndex === caseStudies.length - 1) {
+            const nextButton = document.querySelector('button[onclick*="goToNextCaseStudy"]');
+            if (nextButton) {
+                nextButton.style.display = 'none';
+            }
+        }
+        
+        // Update button text with actual case study names
+        const caseStudyTitles = [
+            'E-commerce Mobile App',
+            'SaaS Dashboard Optimization',
+            'Healthcare App for Seniors', 
+            'Fintech Investment Platform',
+            'Online Learning Platform',
+            'IoT Smart Home Interface'
+        ];
+        
+        const prevButton = document.querySelector('button[onclick*="goToPrevCaseStudy"]');
+        const nextButton = document.querySelector('button[onclick*="goToNextCaseStudy"]');
+        
+        if (prevButton && currentIndex > 0) {
+            prevButton.innerHTML = `← ${caseStudyTitles[currentIndex - 1]}`;
+            prevButton.title = `Previous: ${caseStudyTitles[currentIndex - 1]}`;
+        }
+        
+        if (nextButton && currentIndex < caseStudies.length - 1) {
+            nextButton.innerHTML = `${caseStudyTitles[currentIndex + 1]} →`;
+            nextButton.title = `Next: ${caseStudyTitles[currentIndex + 1]}`;
+        }
+
+        // Add progress indicator and case study overview
+        const navContainer = document.querySelector('.case-study-nav');
+        if (navContainer) {
+            const progressIndicator = document.createElement('div');
+            progressIndicator.className = 'case-study-progress';
+            
+            // Create case study dots navigation
+            let dotsNav = '<div class="case-studies-overview">';
+            caseStudies.forEach((caseStudy, index) => {
+                const isActive = index === currentIndex;
+                dotsNav += `
+                    <div class="case-dot ${isActive ? 'active' : ''}" 
+                         onclick="window.location.href='${caseStudy}'" 
+                         title="${caseStudyTitles[index]}">
+                        <span class="dot-number">${index + 1}</span>
+                    </div>
+                `;
+            });
+            dotsNav += '</div>';
+            
+            progressIndicator.innerHTML = `
+                <div class="progress-info">
+                    <span class="progress-text">Case Study ${currentIndex + 1} of ${caseStudies.length}</span>
+                    <h3 class="current-case-title">${caseStudyTitles[currentIndex]}</h3>
+                    ${dotsNav}
+                </div>
+            `;
+            navContainer.appendChild(progressIndicator);
+        }
+    }
+});
 
 // Form validation for contact page
 function validateContactForm() {
